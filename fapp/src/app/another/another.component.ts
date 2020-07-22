@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./another.component.css']
 })
 export class AnotherComponent implements OnInit {
+  serverName = '';
   allowMyServer = false;
   createServer = 'Server not created';
 
@@ -21,6 +22,11 @@ export class AnotherComponent implements OnInit {
 
   onCreateServer(){
     this.createServer = 'Server Created';
+  }
+
+  onUpdateName(event : Event){
+
+    this.serverName =(<HTMLInputElement> event.target).value;
   }
 
 }

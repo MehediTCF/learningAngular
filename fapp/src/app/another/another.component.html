@@ -1,5 +1,9 @@
 <h1>Another Component</h1>
- <button class="btn btn-primary" [disabled] ="!allowMyServer" (click)="onCreateServer()">Add Server</button>
+
+<input type="text" class="form-control" (input)="onUpdateName($event)">
+<button class="btn btn-primary" [disabled] ="!allowMyServer" (click)="onCreateServer()">Add Server</button>
+
+<p>{{ serverName }}</p>
 
  {{ allowMyServer }} <br>
 
