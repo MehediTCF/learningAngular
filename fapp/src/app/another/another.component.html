@@ -1,4 +1,6 @@
 <h1>Another Component</h1>
- <button class="btn btn-primary" [disabled] ="!allowMyServer">Add Server</button>
+ <button class="btn btn-primary" [disabled] ="!allowMyServer" (click)="onCreateServer()">Add Server</button>
 
- {{ allowMyServer }}
+ {{ allowMyServer }} <br>
+
+<p> {{ createServer }}</p>
