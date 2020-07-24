@@ -1,14 +1,15 @@
-<<<<<<< Updated upstream
+
 <h1>Another Component</h1>
 
-<input type="text" class="form-control" (input)="onUpdateName($event)">
-<button class="btn btn-primary" [disabled] ="!allowMyServer" (click)="onCreateServer()">Add Server</button>
+<!-- <input type="text" class="form-control" (input)="onUpdateName($event)"> -->
 
-<p>{{ serverName }}</p>
-
- {{ allowMyServer }} <br>
+<!-- This is two way data binding -->
+<input type="text" class="form-control" [(ngModel)]="serverName">
+<!-- <button class="btn btn-primary" [disabled] ="!allowMyServer" (click)="onCreateServer()">Add Server</button> -->
+<button class="btn btn-primary" [disabled] ="!serverName" (click)="onCreateServer()">Add Server</button>
+<button class="btn btn-danger" (click)="serverName=''">Reset</button>
 
 <p> {{ createServer }}</p>
 =======
 <h1>Another Component</h1>
->>>>>>> Stashed changes
+

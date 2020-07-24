@@ -21,7 +21,7 @@ export class AnotherComponent implements OnInit {
   }
 
   onCreateServer(){
-    this.createServer = 'Server Created';
+    this.createServer = 'Server Created. Server name is ' +this.serverName;
   }
 
   onUpdateName(event : Event){
