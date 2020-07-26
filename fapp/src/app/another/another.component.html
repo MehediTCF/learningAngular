@@ -9,7 +9,9 @@
 <button class="btn btn-primary" [disabled] ="!serverName" (click)="onCreateServer()">Add Server</button>
 <button class="btn btn-danger" (click)="serverName=''">Reset</button>
 
-<p> {{ createServer }}</p>
+<p *ngIf="serverCreated; else noServer ">Server is  created. Server name is {{ serverName }}</p> <br>
+<ng-template #noServer>No server is created</ng-template>
+
 =======
 <h1>Another Component</h1>
 
