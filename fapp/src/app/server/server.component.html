@@ -1,3 +1,5 @@
 <p>I am server component</p>
-<p> {{ 'server' }} with id {{ serverId }} and status {{ serverStatus }} </p>
+<p [ngStyle]="{backgroundColor: getColor()}" > {{ 'server' }} with id {{ serverId }} and status {{ serverStatus }} </p>
+
+<button class="btn btn-secondary" [disabled]=!createServer>Add New Server</button>
 <app-another></app-another>

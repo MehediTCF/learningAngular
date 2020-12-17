@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "fapp"
+    }
+  },
+  "defaultProject": "fapp",
+  "cli": {
+    "analytics": "96dc1047-a66a-4622-ac8b-9aa5d05a74ec"
+  }
 }
