@@ -5,13 +5,12 @@
 
 <!-- This is two way data binding -->
 <input type="text" class="form-control" [(ngModel)]="serverName">
-<!-- <button class="btn btn-primary" [disabled] ="!allowMyServer" (click)="onCreateServer()">Add Server</button> -->
-<button class="btn btn-primary" [disabled] ="!serverName" (click)="onCreateServer()">Add Server</button>
+<button class="btn btn-primary" [disabled] ="!allowMyServer" (click)="onCreateServer()">Add Server</button>
+<!-- <button class="btn btn-primary" [disabled] ="!serverName" (click)="onCreateServer()">Add Server</button> -->
 <button class="btn btn-danger" (click)="serverName=''">Reset</button>
 
-<p *ngIf="serverCreated; else noServer ">Server is  created. Server name is  {{ serverName }}</p> <br>
-<ng-template #noServer> </ng-template>
 
-=======
+<p *ngIf="serverCreated;else noServer">Server is created. Server name is {{ serverName }}</p>
+<ng-template #noServer>No server Created!</ng-template>
 <h1>Another Component</h1>
 

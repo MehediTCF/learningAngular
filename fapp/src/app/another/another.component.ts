@@ -23,14 +23,13 @@ export class AnotherComponent implements OnInit {
   }
 
   onCreateServer(){
-    this.servers.push(this.serverName);
     this.serverCreated = true;
-    // this.createServer = 'Server Created. Server name is ' +this.serverName;
+    this.createServer = "Server Created successfully";
   }
 
-  onUpdateName(event : Event){
+  // onUpdateName(event : Event){
 
-    this.serverName =(<HTMLInputElement> event.target).value;
-  }
+  //   this.serverName =(<HTMLInputElement> event.target).value;
+  // }
 
 }
